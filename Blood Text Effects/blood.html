@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Text Effects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Blood</h1>
+    <div class="one">
+        <h2>Leaf</h2>
+       <h3>Water</h3>
+   
+    </div> 
+    <div id="cursor">
+
+    </div>
+    
+    <script>
+        document.addEventListener('mousemove',function(e){
+            let cursor = document.getElementById('cursor');
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+
+        })
+    </script>
+</body>
+</html>
